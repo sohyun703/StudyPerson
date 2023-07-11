@@ -1,0 +1,56 @@
+#리스트의 모든 요소를 두 배로 만들기
+numbers = [1, 2, 3, 4, 5]
+double_list=list(map(lambda x : 2*x,numbers)) 
+print(double_list)
+
+#문자열 리스트에서 각 문자열의 길이 구하기
+strings = ['Hello', 'World', 'Python']
+
+list(map(lambda x : len(x),strings))
+
+#숫자 리스트에서 홀수만 필터링하기
+numbers = [1, 2, 3, 4, 5]
+
+odds_list = list(filter(lambda x : x%2 !=0,numbers))
+print(odds_list)
+
+#문자열 리스트에서 모든 문자열을 대문자로 변환하기
+strings = ['hello', 'world', 'python']
+
+upper_list = list(map(lambda x : x.upper(),strings))
+print(upper_list)
+
+#숫자 리스트에서 양수만 필터링하기
+numbers = [-2, -1, 0, 1, 2]
+
+positive_list = list(filter(lambda x : x>0,numbers))
+print(positive_list)
+
+#이름 리스트에서 이름의 첫 글자만 추출하기
+names = ['Alice', 'Bob', 'Charlie']
+
+first_name = list(map(lambda x : x[1:],names))
+print(first_name)
+
+#숫자 리스트에서 각 숫자의 제곱 값 구하기
+numbers = [1, 2, 3, 4, 5]
+
+squared_numbers = list(map(lambda x : x**2,numbers))
+print(squared_numbers)
+
+
+#문자열 리스트에서 각 문자열의 마지막 글자 추출하기
+strings = ['Hello', 'World', 'Python']
+last_strings= list(map(lambda x : x[-1],strings))
+print(last_strings)
+
+#숫자 리스트에서 3의 배수만 필터링하기
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+list_of3  = list(filter(lambda x : x%3 ==0,numbers))
+print(list_of3)
+
+#이름 리스트에서 이름을 거꾸로 변환하기
+names = ['Alice', 'Bob', 'Charlie']
+
+reversed_names = list(map(lambda x : x[::-1],names))
+print(reversed_names)
