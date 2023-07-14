@@ -1,0 +1,15 @@
+
+# 두 정수의 리스트가 주어질 때, 두 리스트의 공통된 요소를 반환하는 함수를 작성하시오
+
+def solution(nums1,nums2):
+  result =[]
+  for i in range(len(nums1)):
+    if nums1[i] in nums2:
+      result.append(nums1[i])
+  
+  return result
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+
+print(solution(list1,list2))
