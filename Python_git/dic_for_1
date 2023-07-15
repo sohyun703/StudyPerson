@@ -1,0 +1,19 @@
+#문제: 주어진 문자열에서 각 단어의 등장 횟수를 딕셔너리로 반환하는 함수를 작성하세요.
+
+def solution(s):
+  #문자열을 각각 리스트로 만들기
+  result = list(s.split())
+  word_count ={}
+  count =0
+  for word in result:
+    if word in word_count:
+      word_count[word] +=1 #value +1
+    else :
+      word_count[word]=1  #새로운 값 추가
+    
+  
+  return word_count
+
+print(solution("hello world hello"))
+
+  
