@@ -1,0 +1,13 @@
+#isalpha()
+
+def solution(arr):
+  result =''
+  for s in arr:
+    if s.isalpha():
+      result +=s
+    else:
+      continue
+  
+  return result
+
+print(solution("Hello World! 123"))
