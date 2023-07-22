@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> <!-- UTF-8 인코딩 설정 -->
+    <title>데이터 분석 웹페이지</title>
+</head>
+<body>
+    <h1>데이터 분석 웹 페이지</h1>
+    <p>데이터 분석 결과를 표시하는 웹페이지입니다.</p>
+    <div id="result">
+        <p>평균 점수: {{ avg_score }}</p>
+        <p>최고 점수: {{ max_score }}</p>
+        <p>최저 점수: {{ min_score }}</p>
+    </div>
+
+    <img src ='data:image/png;base64,{{plot_url}}' alt ='성적 그래프'>
+</body>
+</html>
